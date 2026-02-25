@@ -1,20 +1,22 @@
 import numpy as np
 def tanh(x):
     return np.tanh(x)
-x = np.array([0.6, 0.8])
-
-np.random.seed(42)   
-
-W1 = np.random.uniform(-0.5, 0.5, (2, 2))
-W2 = np.random.uniform(-0.5, 0.5, (1, 2))
+input_data = np.array([0.6, -0.3])
+hidden_layer_weight = np.random.uniform(-0.5, 0.5, (2, 2))
+output_layer_weight = np.random.uniform(-0.5, 0.5, (2, 2))
 
 b1 = 0.5
 b2 = 0.7
 
-z1 = np.dot(W1, x) + b1
-a1 = tanh(z1)
+hidden_net = np.dot(hidden_layer_weight, input_data) + b1
+hidden_output = tanh(hidden_net)
 
-z2 = np.dot(W2, a1) + b2
-output = tanh(z2)
+output_net = np.dot(output_layer_weight, hidden_output) + b2
+final_output = tanh(output_net)
 
-print("Network Output:", output)
+print("Input:", input_data)
+print("Hidden Layer Output:", hidden_output)
+print("Final Output:", final_output)
+
+
+
