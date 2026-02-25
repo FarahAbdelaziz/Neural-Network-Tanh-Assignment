@@ -1,17 +1,18 @@
-Neural Network with Tanh Activation
-Description
-This project implements a simple feedforward neural network using:
+This project implements a simple forward pass of a neural network with:
 
-- Tanh activation function
-- Random weight initialization in range [-0.5, 0.5]
-- Bias values:
-  - b1 = 0.5
-  - b2 = 0.7
- Network Structure
-- 2 Input Neurons
-- 2 Hidden Neurons
-- 1 Output Neuron
+- 2 input neurons  
+- 2 hidden neurons  
+- 2 output neurons  
 
- How to Run
-Run the following command:
+Specifications:
+- Activation function: tanh  
+- Weights initialized randomly in range [-0.5, 0.5]  
+- b1 = 0.5  
+- b2 = 0.7
+  
+ How to run
 python tanh_network.py
+
+The program prints:
+- Hidden layer output  
+- Final output  
