@@ -14,5 +14,7 @@ Specifications:
 python tanh_network.py
 
 The program prints:
+- Input values 
 - Hidden layer output  
-- Final output  
+- Final output
+
