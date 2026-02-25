@@ -1,7 +1,7 @@
 import numpy as np
 def tanh(x):
     return np.tanh(x)
-input_data = np.array([0.6, -0.3])
+input_data = np.array([0.05, 0.10])
 hidden_layer_weight = np.random.uniform(-0.5, 0.5, (2, 2))
 output_layer_weight = np.random.uniform(-0.5, 0.5, (2, 2))
 
